@@ -1,10 +1,9 @@
 #include "filter_coeffs.h"
 #include <filter.h>
 #include "modulator.h"
+#include "modem.h"
 
-#define FRAME 263
-#define NUMBER_OF_SYMBOLS FRAME*2
-#define NUMBER_OF_SYMBOLS_OVERSAMPLED NUMBER_OF_SYMBOLS*8
+
 
 char frame[FRAME];
 fract32 frame_symbols_real[NUMBER_OF_SYMBOLS];
@@ -13,15 +12,9 @@ fract32 frame_symbols_imag[NUMBER_OF_SYMBOLS];
 fract32 frame_symbols_real_upsample[NUMBER_OF_SYMBOLS_OVERSAMPLED];
 fract32 frame_symbols_imag_upsample[NUMBER_OF_SYMBOLS_OVERSAMPLED];
 
-
-int constelation_imag[] = {3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1};
-int constelation_real[] = {-3, -3, -3, -3, -1, -1 , -1, -1, 1, 1, 1, 1, 3, 3, 3, 3};
-
 /*
  * For filter use
  */
-#define NUM_COEFFS	49
-#define NUM_SAMPLES	NUMBER_OF_SYMBOLS_OVERSAMPLED
 
 fract32 filtered_real_symbols[NUM_SAMPLES];
 fract32 filtered_imag_symbols[NUM_SAMPLES];
@@ -38,12 +31,18 @@ fract32 delay_imag[NUM_COEFFS];
 /*
  * For the modulator
  */
-#define NUM_
-float sin_modulator[] = {0,	0.7071, 1,	0.7071,		0,	-0.7071,	-1,	-0.7071};
-float cos_modulator[] = {1,	0.7071,	0,	-0.7071,	-1,	-0.7071,	0,	0.7071};
 
 fract32 modulated_signal[NUM_SAMPLES];
 
+/*
+ * This function is used in order to prepare the signal to send from the dac
+ */
+void modulator(){
+	mapper();
+	upsample();
+	filter();
+	modulate();
+}
 
 /*
  * The function used to parse the signal from binary to symbols
@@ -102,7 +101,7 @@ void filter(){
 /*
  * The function used to modulate the symbols
  */
-void modulator(){
+void modulate(){
 	int i = 0;
 
 	for (int i = 0; i < NUM_SAMPLES; ++i) {

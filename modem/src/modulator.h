@@ -11,5 +11,7 @@
 void modulator();
 void filter();
 void upsample();
+void modulate();
+void mapper();
 
 #endif /* MODULATOR_H_ */
