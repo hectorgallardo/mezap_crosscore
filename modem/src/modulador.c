@@ -1,21 +1,11 @@
 #include "filter_coeffs.h"
-#include "filter.h"
-#include "math.h"
-#include "fract_typedef.h"
-#include "fract2float_conv.h"
+#include <filter.h>
+#include "modulator.h"
 
-
-#define BITS 8
-#define BITS_PER_SYMBOL 4
-#define DATA_LENGTH 260
-#define CHECKSUM_LENGTH 2
 #define FRAME 263
 #define NUMBER_OF_SYMBOLS FRAME*2
 #define NUMBER_OF_SYMBOLS_OVERSAMPLED NUMBER_OF_SYMBOLS*8
 
-char frame_init = 0xAA;
-char data[DATA_LENGTH];
-char checksum[CHECKSUM_LENGTH];
 char frame[FRAME];
 fract32 frame_symbols_real[NUMBER_OF_SYMBOLS];
 fract32 frame_symbols_imag[NUMBER_OF_SYMBOLS];
@@ -24,57 +14,40 @@ fract32 frame_symbols_real_upsample[NUMBER_OF_SYMBOLS_OVERSAMPLED];
 fract32 frame_symbols_imag_upsample[NUMBER_OF_SYMBOLS_OVERSAMPLED];
 
 
-#define NUM_COEFFS 49
-fir_state_fr32 state_real;
-fir_state_fr32 state_imag;
-#pragma section("L1_data_b")
-fract32 delay_real[NUM_COEFFS+2];
-#pragma section("L1_data_b")
-fract32 delay_imag[NUM_COEFFS+2];
-
-segment ("sdram0")  fract32 guardado_Real[BUFFER_SIZE/8];
-
-
-
-
-
-
 int constelation_imag[] = {3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1};
 int constelation_real[] = {-3, -3, -3, -3, -1, -1 , -1, -1, 1, 1, 1, 1, 3, 3, 3, 3};
 
-void encapsulation(){
+/*
+ * For filter use
+ */
+#define NUM_COEFFS	49
+#define NUM_SAMPLES	NUMBER_OF_SYMBOLS_OVERSAMPLED
+
+fract32 filtered_real_symbols[NUM_SAMPLES];
+fract32 filtered_imag_symbols[NUM_SAMPLES];
+
+fir_state_fr32 state_real;
+fir_state_fr32 state_imag;
+
+#pragma section("L1_data_b")
+fract32 delay_real[NUM_COEFFS];
+#pragma section("L1_data_b")
+fract32 delay_imag[NUM_COEFFS];
 
 
+/*
+ * For the modulator
+ */
+#define NUM_
+float sin_modulator[] = {0,	0.7071, 1,	0.7071,		0,	-0.7071,	-1,	-0.7071};
+float cos_modulator[] = {1,	0.7071,	0,	-0.7071,	-1,	-0.7071,	0,	0.7071};
+
+fract32 modulated_signal[NUM_SAMPLES];
 
 
-
-
-}
-
-
-
-void calculateChecksum(){
-	int i=0;
-	int total=4; //frame init tiene 4 bits a 1
-	int aux;
-	int j;
-
-	for (i = 0; i < DATA_LENGTH; ++i) {
-		for(j = 0; j < 8; j++){
-
-			aux = data[i] & (1<<j);
-			if(aux > 0)
-				total++;
-		}
-
-
-	}
-
-	checksum[0] = total & 0xF;
-	checksum[1] = (total & 0xF0) >> 4;
-
-}
-
+/*
+ * The function used to parse the signal from binary to symbols
+ */
 void mapper(){
 	int i=0;
 	int numDecimal = 0;
@@ -87,6 +60,9 @@ void mapper(){
 	}
 }
 
+/*
+ * The function used to upsample the signal
+ */
 void upsample(){
 	int i=0;
 
@@ -101,26 +77,38 @@ void upsample(){
 	}
 }
 
+/*
+ * The function used to filter the real and imaginary symbols out
+ */
 void filter(){
 	int i=0;
 
-	/* Filter initializations */
-	// MIKEL: Insert ere any filter initialization you might need
-	for (i = 0; i < NUM_COEFFS; i++) /* clear the delay line */
+	//Initializates the filter delay
+	for (i = 0; i < NUM_COEFFS; i++)
 	{
 		delay_real[i] = 0;
 		delay_imag[i] = 0;
 	}
 
+	//Initializates the filter
 	fir_init(state_real, filter_coefficients, delay_real, NUM_COEFFS, 0);
 	fir_init(state_imag, filter_coefficients, delay_imag, NUM_COEFFS, 0);
 
-	fir_fr32(guardado1, salida1, NUM_SAMPLES, &state1);
-
-	fir_fr32(guardado2, salida2, NUM_SAMPLES, &state2);
+	//Filters the signal
+	fir_fr32(frame_symbols_real_upsample, filtered_real_symbols, NUM_SAMPLES, &state_real);
+	fir_fr32(frame_symbols_imag_upsample, filtered_imag_symbols, NUM_SAMPLES, &state_imag);
 }
 
+/*
+ * The function used to modulate the symbols
+ */
+void modulator(){
+	int i = 0;
 
+	for (int i = 0; i < NUM_SAMPLES; ++i) {
+		modulated_signal[i] = filtered_real_symbols[i]*cos_modulator[i%8] - filtered_imag_symbols[i]*sin_modulator[i%8];
+	}
+}
 
 
 
