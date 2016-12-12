@@ -1,13 +1,8 @@
-/*
- * demodulator.c
- *
- *  Created on: 2016 abe. 10
- *      Author: ibair
- */
+
 #include <filter.h>
 #include "modem.h"
 #include "demodulator.h"
-#include "filter_coeffs.h"
+//#include "filter_coeffs.h"
 #include <fract2float_conv.h>
 #include <math.h>
 
@@ -21,11 +16,11 @@ segment ("sdram0") fract32 received_fr_imag[NUM_SAMPLES];
 segment ("sdram0") fract32 filtered_fr_real[NUM_SAMPLES];
 segment ("sdram0") fract32 filtered_fr_imag[NUM_SAMPLES];
 
-fir_state_fr32 state_real;
-fir_state_fr32 state_imag;
+//fir_state_fr32 state_real;
+//fir_state_fr32 state_imag;
 
-segment ("sdram0")fract32 delay_real[NUM_COEFFS];
-segment ("sdram0")fract32 delay_imag[NUM_COEFFS];
+//segment ("sdram0")fract32 delay_real[NUM_COEFFS];
+//segment ("sdram0")fract32 delay_imag[NUM_COEFFS];
 
 segment ("sdram0") float received_filtered_real[NUM_SAMPLES];
 segment ("sdram0") float received_filtered_imag[NUM_SAMPLES];

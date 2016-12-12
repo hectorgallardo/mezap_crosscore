@@ -1,4 +1,4 @@
-#include "filter_coeffs.h"
+//#include "filter_coeffs.h"
 #include <filter.h>
 #include "modulator.h"
 #include "modem.h"
@@ -93,6 +93,7 @@ void filter(){
 	}
 
 	//Initializates the filter
+
 	fir_init(state_real, filter_coefficients, delay_real, NUM_COEFFS, 0);
 	fir_init(state_imag, filter_coefficients, delay_imag, NUM_COEFFS, 0);
 

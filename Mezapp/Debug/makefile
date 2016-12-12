@@ -94,21 +94,21 @@ C_UPPER_DEPS := $(subst \ ,@, $(C_UPPER_DEPS))
 C_UPPER_DEPS := $(foreach var, $(C_UPPER_DEPS), "$(subst @, ,$(var))")
 
 # All Target
-all: AudioLoopback.dxe
+all: Mezapp.dxe
 
 # Tool invocations
-AudioLoopback.dxe: $(LDF_SRCS) $(SRC_OBJS)
+Mezapp.dxe: $(LDF_SRCS) $(SRC_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: CrossCore Blackfin Linker'
-	ccblkfn.exe -proc ADSP-BF537 -si-revision any -TC:/Users/Hector/Desktop/MONDRAGON\ UNIBERTSITATEA/3.\ Telecomunicaciones/POPBL5/WS_EJEMPLO_COMPLETO/WS_EJEMPLO/AudioLoopback/system/startup_ldf/app.ldf -no-mem -LC:/Users/Hector/Desktop/MONDRAGON\ UNIBERTSITATEA/3.\ Telecomunicaciones/POPBL5/WS_EJEMPLO_COMPLETO/WS_EJEMPLO/AudioLoopback/Debug/system/startup_ldf -flags-link -MDDEBUG -flags-link -e -flags-link -MDUSE_CACHE -o AudioLoopback.dxe $(SRC_OBJS) $(LDF_SRCS)  -flags-link -od,.\.
+	ccblkfn.exe -proc ADSP-BF537 -si-revision any -TC:/Users/Hector/git/mezap_crosscore/Mezapp/system/startup_ldf/app.ldf -no-mem -LC:/Users/Hector/git/mezap_crosscore/Mezapp/Debug/system/startup_ldf -flags-link -MDDEBUG -flags-link -e -flags-link -MDUSE_CACHE -o Mezapp.dxe $(SRC_OBJS) $(LDF_SRCS)  -flags-link -od,.\.
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-linker_log.xml: AudioLoopback.dxe $(LDF_SRCS) $(SRC_OBJS)
+linker_log.xml: Mezapp.dxe $(LDF_SRCS) $(SRC_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(ASM_DEPS)$(CC_DEPS)$(DSP_DEPS)$(DXE)$(CPP_DEPS)$(LINKER_LOG_OUTPUTS)$(S_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS) AudioLoopback.dxe
+	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(ASM_DEPS)$(CC_DEPS)$(DSP_DEPS)$(DXE)$(CPP_DEPS)$(LINKER_LOG_OUTPUTS)$(S_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS) Mezapp.dxe
 	-@echo ' '
 
 .PHONY: all clean dependents
