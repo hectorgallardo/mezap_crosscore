@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Analog Devices/CrossCore Embedded Studio 2.1.0/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Mon Dec 12 16:28:47 2016
+'>
+<MSG id='03BEB848' mid='li1050' type='Error' >
+<TEXT><![CDATA['_state_real' ('state_real'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     '.\demodulator.doj'
+        Attempted redefinition: '.\modulador.doj']]></TEXT>
+</MSG>
+<MSG id='03BEEB48' mid='li1050' type='Error' >
+<TEXT><![CDATA['_state_imag' ('state_imag'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     '.\demodulator.doj'
+        Attempted redefinition: '.\modulador.doj']]></TEXT>
+</MSG>
+<MSG id='03BF2C40' mid='li1050' type='Error' >
+<TEXT><![CDATA['_filter_coefficients' ('filter_coefficients'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     '.\demodulator.doj'
+        Attempted redefinition: '.\modulador.doj']]></TEXT>
+</MSG>
+<MSG id='03BF2E10' mid='li1050' type='Error' >
+<TEXT><![CDATA['_delay_real' ('delay_real'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     '.\demodulator.doj'
+        Attempted redefinition: '.\modulador.doj']]></TEXT>
+</MSG>
+<MSG id='03BF2FE0' mid='li1050' type='Error' >
+<TEXT><![CDATA['_delay_imag' ('delay_imag'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     '.\demodulator.doj'
+        Attempted redefinition: '.\modulador.doj']]></TEXT>
+</MSG>
+</DOCUMENT>
