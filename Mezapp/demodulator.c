@@ -18,7 +18,8 @@ segment ("sdram0") fract32 filtered_fr_imag[NUM_SAMPLES];
 segment ("sdram0") fract32 received_filtered_real[NUM_SAMPLES];
 segment ("sdram0") fract32 received_filtered_imag[NUM_SAMPLES];
 
-#define AFTER_DOWN NUM_SAMPLES/OVERSAMPLING
+//AFTER_DOWN sin el - 49
+#define AFTER_DOWN (NUM_SAMPLES-49)/OVERSAMPLING
 
 segment ("sdram0") fract32 received_symbol_real[AFTER_DOWN];
 segment ("sdram0") fract32 received_symbol_imag[AFTER_DOWN];
@@ -76,13 +77,8 @@ void filter_demodulator(){
 
 void dowmsample(){
 	for (int i = 0; i < AFTER_DOWN; i++) {
-		if(i%8 == 0){
 			received_symbol_imag[i]=filtered_fr_imag[i*8];
 			received_symbol_real[i]=filtered_fr_real[i*8];
-		}else{
-			received_symbol_imag[i] = 0;
-			received_symbol_real[i] = 0;
-		}
 	}
 }
 
