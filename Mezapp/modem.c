@@ -19,9 +19,10 @@ int main(int argc, char *argv[])
 	 * @return zero on success
 	 */
 	//adi_initComponents();
-	for (int i = 0; i < NUM_SAMPLES; ++i) {
-		frame[i] = i;
-	}
+
+	frame[0] = 0xAF;
+	frame[1] = 0xAB;
+
 	modulator();
 
 	/* Begin adding your custom code here */

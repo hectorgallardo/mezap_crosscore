@@ -40,7 +40,7 @@ system/startup_ldf/%.doj: ../system/startup_ldf/%.c
 system/startup_ldf/%.doj: ../system/startup_ldf/%.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore Blackfin Assembler'
-	easmblkfn.exe -file-attr ProjectName="Mezapp" -proc ADSP-BF537 -si-revision any -g -D_DEBUG -i"C:\Users\Hector\git\mezap_crosscore\Mezapp\system" -i"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
+	easmblkfn.exe -file-attr ProjectName="Mezapp" -proc ADSP-BF537 -si-revision any -g -D_DEBUG -i"C:\Users\Hector\git\mezap_crosscore\Mezapp\system" -i"/Blackfin/include" -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
