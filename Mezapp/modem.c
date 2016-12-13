@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	frame[0] = 0xAF;
 	frame[1] = 0xAB;
 
+	init_modulator();
 	modulator();
 
 	/* Begin adding your custom code here */

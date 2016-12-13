@@ -14,15 +14,15 @@
 #define NUMBER_OF_SYMBOLS 				FRAME*2
 #define NUMBER_OF_SYMBOLS_OVERSAMPLED	NUMBER_OF_SYMBOLS*8
 #define NUM_COEFFS						49
-#define NUM_SAMPLES						NUMBER_OF_SYMBOLS_OVERSAMPLED
+#define NUM_SAMPLES						NUMBER_OF_SYMBOLS_OVERSAMPLED + NUM_COEFFS
 
 #include <filter.h>
 #include "modulator.h"
 #include "demodulator.h"
 
 extern char frame[];
-extern int constelation_imag[];
-extern int constelation_real[];
+extern fract32 constelation_imag[];
+extern fract32 constelation_real[];
 
 extern float sin_modulator[];
 extern float cos_modulator[];

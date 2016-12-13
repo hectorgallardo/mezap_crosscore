@@ -9,17 +9,24 @@ char frame[FRAME];
 segment ("sdram0") fract32 frame_symbols_real[NUMBER_OF_SYMBOLS];
 segment ("sdram0") fract32 frame_symbols_imag[NUMBER_OF_SYMBOLS];
 
-segment ("sdram0") fract32 frame_symbols_real_upsample[NUMBER_OF_SYMBOLS_OVERSAMPLED];
-segment ("sdram0") fract32 frame_symbols_imag_upsample[NUMBER_OF_SYMBOLS_OVERSAMPLED];
+segment ("sdram0") fract32 frame_symbols_real_upsample[NUM_SAMPLES];
+segment ("sdram0") fract32 frame_symbols_imag_upsample[NUM_SAMPLES];
+
+
+#pragma section("L1_data_b")
+fract32 x1[NUM_COEFFS];
 
 /*
  * For filter use
  */
-int constelation_imag[] = {3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1};
-int constelation_real[] = {-3, -3, -3, -3, -1, -1 , -1, -1, 1, 1, 1, 1, 3, 3, 3, 3};
+segment ("sdram0") float constelation_imag_f[] = {3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1, 3, 1, -3, -1};
+segment ("sdram0") float constelation_real_f[] = {-3, -3, -3, -3, -1, -1 , -1, -1, 1, 1, 1, 1, 3, 3, 3, 3};
 
-float sin_modulator[] = {0,	0.7071, 1,	0.7071,		0,	-0.7071,	-1,	-0.7071};
-float cos_modulator[] = {1,	0.7071,	0,	-0.7071,	-1,	-0.7071,	0,	0.7071};
+segment ("sdram0") fract32 constelation_imag[16];
+segment ("sdram0") fract32 constelation_real[16];
+
+segment ("sdram0") float sin_modulator[] = {0,	0.7071, 1,	0.7071,		0,	-0.7071,	-1,	-0.7071};
+segment ("sdram0") float cos_modulator[] = {1,	0.7071,	0,	-0.7071,	-1,	-0.7071,	0,	0.7071};
 
 segment ("sdram0") fract32 filtered_real_symbols[NUM_SAMPLES];
 segment ("sdram0") fract32 filtered_imag_symbols[NUM_SAMPLES];
@@ -40,10 +47,18 @@ segment ("sdram0") fract32 modulated_signal[NUM_SAMPLES];
 /*
  * This function is used in order to prepare the signal to send from the dac
  */
+
+void init_modulator(){
+	for (int i = 0;  i < 16; i++) {
+		constelation_real[i]=float_to_fr32(constelation_real_f[i]/(3.17));
+		constelation_imag[i]=float_to_fr32(constelation_imag_f[i]/(3.17));
+	}
+}
 void modulator(){
 	mapper();
 	upsample();
 	filter();
+	//funcion_filtro();
 	modulate();
 }
 
@@ -83,6 +98,7 @@ void upsample(){
  * The function used to filter the real and imaginary symbols out
  */
 void filter(){
+
 	int i=0;
 
 	//Initializates the filter delay
@@ -91,6 +107,11 @@ void filter(){
 		delay_real[i] = 0;
 		delay_imag[i] = 0;
 	}
+	//Initializates the filter delay
+		for (i = 0; i < NUM_COEFFS; i++)
+		{
+			x1[i] = 0;
+		}
 
 	//Initializates the filter
 
@@ -100,7 +121,10 @@ void filter(){
 	//Filters the signal
 	fir_fr32(frame_symbols_real_upsample, filtered_real_symbols, NUM_SAMPLES, &state_real);
 	fir_fr32(frame_symbols_imag_upsample, filtered_imag_symbols, NUM_SAMPLES, &state_imag);
+
 }
+
+
 
 /*
  * The function used to modulate the symbols
