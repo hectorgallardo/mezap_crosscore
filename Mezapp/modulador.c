@@ -25,8 +25,16 @@ segment ("sdram0") float constelation_real_f[] = {-3, -3, -3, -3, -1, -1 , -1, -
 segment ("sdram0") fract32 constelation_imag[16];
 segment ("sdram0") fract32 constelation_real[16];
 
+/*
+ * Para Fc = 6 KHz
 segment ("sdram0") float sin_modulator[] = {0,	0.7071, 1,	0.7071,		0,	-0.7071,	-1,	-0.7071};
 segment ("sdram0") float cos_modulator[] = {1,	0.7071,	0,	-0.7071,	-1,	-0.7071,	0,	0.7071};
+*/
+
+//Para  Fc=12kHz
+segment ("sdram0") float sin_modulator[] = {0,	1, 0,	-1,		0,	1,	0,	-1};
+segment ("sdram0") float cos_modulator[] = {1,	0,	-1,	0,	1,	0,	-1,	0};
+
 
 segment ("sdram0") fract32 filtered_real_symbols[NUM_SAMPLES];
 segment ("sdram0") fract32 filtered_imag_symbols[NUM_SAMPLES];
@@ -133,8 +141,10 @@ void modulate(){
 	int i = 0;
 
 	for (int i = 0; i < NUM_SAMPLES; ++i) {
-		modulated_signal[i] = filtered_real_symbols[i]*cos_modulator[i%8] - filtered_imag_symbols[i]*sin_modulator[i%8];
+		modulated_signal[i] = (filtered_real_symbols[i]*cos_modulator[i%8]- filtered_imag_symbols[i]*sin_modulator[i%8])*1.4142;
 	}
+
+
 }
 
 

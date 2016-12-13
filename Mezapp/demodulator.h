@@ -8,6 +8,7 @@
 #ifndef DEMODULATOR_H_
 #define DEMODULATOR_H_
 
+void init_demodulator(void);
 void demodulator(void);
 void demodulate(void);
 void filter_demodulator(void);

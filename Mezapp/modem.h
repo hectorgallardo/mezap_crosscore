@@ -7,9 +7,10 @@
 
 /* Add your custom header content here */
 #define SAMPLING_FREQ	48000	//Hz
-#define CARRIER_FREQ	6000	//Hz
+#define CARRIER_FREQ	12000	//Hz
+#define SYMBOL_FREQ		6000	//Hz
 
-#define OVERSAMPLING					SAMPLING_FREQ/CARRIER_FREQ
+#define OVERSAMPLING					SAMPLING_FREQ/SYMBOL_FREQ
 #define FRAME							2
 #define NUMBER_OF_SYMBOLS 				FRAME*2
 #define NUMBER_OF_SYMBOLS_OVERSAMPLED	NUMBER_OF_SYMBOLS*8
@@ -34,5 +35,6 @@ extern fir_state_fr32 state_real;
 extern fir_state_fr32 state_imag;
 
 extern segment ("sdram0") fract32 filter_coefficients[];
+extern fract32 modulated_signal[NUM_SAMPLES];
 
 #endif /* __MODEM_H__ */

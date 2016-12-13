@@ -26,6 +26,9 @@ int main(int argc, char *argv[])
 	init_modulator();
 	modulator();
 
+	init_demodulator();
+	demodulator();
+
 	/* Begin adding your custom code here */
 
 	return 0;
