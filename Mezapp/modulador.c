@@ -59,7 +59,7 @@ segment ("sdram0") fract32 modulated_signal[NUM_SAMPLES_TX];
 void init_modulator(){
     for (int i = 0;  i < 16; i++) {
         constelation_real[i]=float_to_fr32(constelation_real_f[i]/(3.17));
-        constelation_imag[i]=float_to_fr32(constelation_imag_f[i]/(3.17));
+        constelation_imag[i]=float_to_fr32(constelation_imag_f[i]/(3.17));//3.17 es sqrt(10)
     }
 }
 void modulator(){

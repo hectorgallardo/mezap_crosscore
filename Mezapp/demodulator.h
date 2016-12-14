@@ -14,5 +14,6 @@ void demodulate(void);
 void filter_demodulator(void);
 void dowmsample(void);
 void demapper(void);
+void init_ranges(void);
 
 #endif /* DEMODULATOR_H_ */
