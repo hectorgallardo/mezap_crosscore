@@ -90,8 +90,6 @@ void demapper(){
     double distance;
     double min_distance;
 
-
-
     for (int received_symbol_index = 0; received_symbol_index < NUMBER_OF_SYMBOLS; received_symbol_index++) {
         min_distance = 100000;
         for (int symbol_index = 0; symbol_index < SYMBOLS_16QAM; symbol_index++) {
