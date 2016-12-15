@@ -7,7 +7,8 @@ C_SRCS += \
 ../demodulator.c \
 ../filter_coeffic.c \
 ../modem.c \
-../modulador.c 
+../modulador.c \
+../uart.c 
 
 LDF_SRCS += \
 ../app.ldf 
@@ -16,13 +17,15 @@ SRC_OBJS += \
 ./demodulator.doj \
 ./filter_coeffic.doj \
 ./modem.doj \
-./modulador.doj 
+./modulador.doj \
+./uart.doj 
 
 C_DEPS += \
 ./demodulator.d \
 ./filter_coeffic.d \
 ./modem.d \
-./modulador.d 
+./modulador.d \
+./uart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

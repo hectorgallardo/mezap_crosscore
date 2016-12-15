@@ -12,7 +12,7 @@
 #define SYMBOL_FREQ        6000    //Hz
 
 #define OVERSAMPLING                    SAMPLING_FREQ/SYMBOL_FREQ
-#define FRAME                           2
+#define FRAME                           16
 #define NUMBER_OF_SYMBOLS               FRAME*2
 #define NUMBER_OF_SYMBOLS_OVERSAMPLED   NUMBER_OF_SYMBOLS*8
 #define NUM_COEFFS                      49
@@ -25,6 +25,15 @@
 #include <filter.h>
 #include "modulator.h"
 #include "demodulator.h"
+
+#include <blackfin.h>
+#include <stdio.h>
+#include <services\int\adi_int.h>
+#include <drivers\uart\adi_uart.h>
+#include <services\pwr\adi_pwr.h>
+#include <string.h>
+
+
 
 extern char frame[];
 extern fract32 constelation_imag[];
@@ -44,5 +53,10 @@ extern fir_state_fr32 state_imag;
 
 extern segment ("sdram0") fract32 filter_coefficients[];
 extern fract32 modulated_signal[NUM_SAMPLES_TX];
+
+
+
+
+
 
 #endif /* __MODEM_H__ */
