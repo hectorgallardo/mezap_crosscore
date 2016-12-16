@@ -187,9 +187,9 @@ void salirPorUART(){
 
 void comprobarEntradaUART(){
 
+
 	/* Read a character */
 	respuestaRx=adi_uart_IsRxBufferAvailable (hDevice, &enviar);
-
 
 	if(enviar){
 		respuestaRx = adi_uart_GetRxBuffer (hDevice, &UBufferJaso);//recibe

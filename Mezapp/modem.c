@@ -27,7 +27,10 @@ int main(int argc, char *argv[])
 	char* fff = "ibai the best";
 	memcpy(entrada_test,fff,strlen(fff));
 	initializations();
-	salirPorUART();
+	while(1){
+	comprobarEntradaUART();
+	}fff=entrada_test;
+	//salirPorUART();
 	/*init_modulator();
 	modulator();
 
