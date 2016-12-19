@@ -5,13 +5,14 @@
 #include <sys/platform.h>
 #include "adi_initialize.h"
 #include "modem.h"
-#include "uart.h"
+#include "peripherals.h"
 
 
 /**
  * If you want to use command program arguments, then place them in the following string.
  */
 char __argv_string[] = "";
+#include <stdio.h>
 
 int main(int argc, char *argv[])
 {
@@ -22,21 +23,23 @@ int main(int argc, char *argv[])
 	 */
 	//adi_initComponents();
 
-//	frame[0] = 0xAF;
-//	frame[1] = 0xAB;
-	char* fff = "ibai the best";
-	memcpy(entrada_test,fff,strlen(fff));
-	initializations();
-	while(1){
-	comprobarEntradaUART();
-	}fff=entrada_test;
-	//salirPorUART();
-	/*init_modulator();
+	frame[0] = 0xAF;
+	frame[1] = 0xAB;
+//	char* fff = "ib";
+//	memcpy(send_through_uart,fff,strlen(fff));
+//	initializate_peripherals();
+//	while(1){
+//	sendThroughUART();
+//	printf("%s", receive_from_uart);
+//	}
+
+//	salirPorUART();
+	init_modulator();
 	modulator();
 
 	init_demodulator();
 	demodulator();
-	 */
+
 	/* Begin adding your custom code here */
 
 	return 0;

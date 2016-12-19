@@ -29,7 +29,6 @@ C_UPPER_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-. \
 system/startup_ldf \
 system/startup_ldf/Debug/system/startup_ldf \
 system/startup_ldf/Debug/system \
@@ -41,5 +40,6 @@ system/pinmux/GeneratedSources \
 system \
 system/BF537_EZ-KIT_Lite/drivers/dac \
 system/BF537_EZ-KIT_Lite/drivers/adc \
+. \
 .metadata/.plugins/org.eclipse.cdt.make.core \
 

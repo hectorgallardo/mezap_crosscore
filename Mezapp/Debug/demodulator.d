@@ -1,64 +1,39 @@
-uart.doj: ../uart.c
-uart.doj: ../uart.h
-uart.doj: ../modem.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/filter.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/complex.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/complex_typedef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/fract_typedef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/builtins.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/builtins_support.h
-uart.doj: ../modulator.h
-uart.doj: ../demodulator.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/blackfin.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/platform.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/_adi_platform.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/cdefBF537.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/cdefBF534.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/defBF534.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/def_LPBlackfin.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/cdef_LPBlackfin.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/def_LPBlackfin.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/defBF537.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/def_LPBlackfin.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/ccblkfn.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdlib.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/yvals.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdlib_bf.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/builtins.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/builtins_support.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/builtins.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/builtins_support.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/fr2x16_typedef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/r2x16_typedef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/raw_typedef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/i2x16_typedef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/anomaly_macros_rtl.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/adi_core.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdint.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/mc_typedef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdio.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/int/adi_int.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdbool.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/int/adi_int_id.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/interrupt.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/exception.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/anomaly_macros_rtl.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/int/adi_sic.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/drivers/uart/adi_uart.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/drivers/uart/adi_uart_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stddef.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/adi_osal.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/adi_osal_arch.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/adi_types.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/pwr/adi_pwr.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/pwr/adi_pwr_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/pwr/adi_pwr_bf53x.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/dma/adi_dma.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/dma/adi_mdma_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/dma/adi_mdma_streams_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/dma/adi_pdma_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/dma/adi_pdma_channels_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/tmr/adi_tmr.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/tmr/adi_tmr_reg_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/services/tmr/adi_tmr_bf5xx.h
-uart.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/string.h
+modem.doj: ../modem.c
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/platform.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/_adi_platform.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/cdefBF537.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/cdefBF534.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/defBF534.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/def_LPBlackfin.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/cdef_LPBlackfin.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/def_LPBlackfin.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/defBF537.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/def_LPBlackfin.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/ccblkfn.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdlib.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/yvals.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdlib_bf.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/builtins.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/builtins_support.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/builtins.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/builtins_support.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/fract_typedef.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/fr2x16_typedef.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/r2x16_typedef.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/raw_typedef.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/i2x16_typedef.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/complex_typedef.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/anomaly_macros_rtl.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/adi_core.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdint.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/mc_typedef.h
+modem.doj: ../system/adi_initialize.h
+modem.doj: ../modem.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/filter.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/complex.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/builtins.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/sys/builtins_support.h
+modem.doj: ../modulator.h
+modem.doj: ../demodulator.h
+modem.doj: ../peripherals.h
+modem.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.1.0/Blackfin/include/stdio.h

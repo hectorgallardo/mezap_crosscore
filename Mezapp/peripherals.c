@@ -1,0 +1,332 @@
+//#include "peripherals.h"
+//#include "modem.h"
+//
+//#include <blackfin.h>
+//#include <stdio.h>
+//#include <services\int\adi_int.h>
+//#include <drivers\uart\adi_uart.h>
+//#include <services\pwr\adi_pwr.h>
+//#include <string.h>
+//
+//
+//#define BAUD_RATE           9600u
+//
+///* External input clock frequency in Hz */
+//#define 	PROC_CLOCK_IN       		25000000
+///* Maximum core clock frequency in Hz */
+//#define 	PROC_MAX_CORE_CLOCK 		600000000
+///* Maximum system clock frequency in Hz */
+//#define 	PROC_MAX_SYS_CLOCK  		133333333
+///* Minimum VCO clock frequency in Hz */
+//#define 	PROC_MIN_VCO_CLOCK  		25000000
+///* Required core clock frequency in Hz */
+//#define 	PROC_REQ_CORE_CLOCK 		400000000
+///* Required system clock frequency in Hz */
+//#define 	PROC_REQ_SYS_CLOCK  		100000000
+//
+///* Rx and Tx buffers */
+//char BufferTx1[FRAME];
+//char BufferTx2[FRAME];
+//char BufferRx1[FRAME];
+//char BufferRx2[FRAME];
+//
+//unsigned char *UBufferBidali,*UBufferJaso;
+//bool enviar;
+//
+///* UART Handle */
+//static ADI_UART_HANDLE hDevice;
+//
+//static ADI_UART_RESULT respuestaTx;
+//static ADI_UART_RESULT respuestaRx;
+//
+//uint32_t	Result;
+//
+////Variables conversores
+//fract32 *ptr_fr32;
+//
+//#define BUFFER_SIZE_CONV (65536*FRAME)
+//
+//#define CARACTERES_PRUEBA 8
+//
+//section ("sdram0") fract32 captura_prueba[BUFFER_SIZE_CONV/4];
+//
+//section ("sdram0") int indice_guardado = 0;
+//
+////Variables UART
+//section ("sdram0") unsigned char trama_entrada_mod[CARACTERES_PRUEBA + FRAME];// = {"actualizar"};
+//section ("sdram0") unsigned char trama_salida_demod[FRAME];
+//section ("sdram0") unsigned char send_through_uart[BUFFER_SIZE];
+//section ("sdram0") unsigned char receive_from_uart[BUFFER_SIZE];
+//
+//
+//
+///* Memory required for operating UART in dma mode */
+//static uint8_t gUARTMemory[ADI_UART_BIDIR_DMA_MEMORY_SIZE];
+//
+//static bool bError;
+//
+//static void CheckResult(ADI_UART_RESULT result) {
+//	if (result != ADI_UART_SUCCESS) {
+//		printf("UART failure\n");
+//		bError = true;
+//	}
+//	/* IF (Debug info enabled) */
+//#if defined(ENABLE_DEBUG_INFO)
+//#define DEBUG_MSG1(message)     printf(message)
+//#define DEBUG_MSG2(message, result) \
+//		do { \
+//			printf(message); \
+//			if(result) \
+//			{ \
+//				printf(", Error Code: 0x%08X", result); \
+//				printf("\n"); \
+//			} \
+//		} while (0)
+//	/* ELSE (Debug info disabled) */
+//#else
+//
+//#define DEBUG_MSG1(message)
+//#define DEBUG_MSG2(message, result)
+//
+//#endif
+//
+//}
+//
+//void initializate_peripherals(){
+//
+//	unsigned int i;
+//	ADI_UART_RESULT eResult;
+//
+//	/* Initialize managed drivers and/or services */
+//	adi_initComponents();
+//
+//
+//
+//	/* Initialize power service */
+//	Result = (uint32_t) adi_pwr_Init (PROC_CLOCK_IN, PROC_MAX_CORE_CLOCK, PROC_MAX_SYS_CLOCK, PROC_MIN_VCO_CLOCK);
+//
+//	/* IF (Failure) */
+//	if (Result)
+//	{
+//		DEBUG_MSG1 ("Failed to initialize Power service\n");
+//	}
+//
+//	/* IF (Success) */
+//	if (Result == 0)
+//	{
+//		/* Set the required core clock and system clock */
+//		Result = (uint32_t) adi_pwr_SetFreq(PROC_REQ_CORE_CLOCK, PROC_REQ_SYS_CLOCK);
+//
+//		/* IF (Failure) */
+//		if (Result)
+//		{
+//			DEBUG_MSG1 ("Failed to initialize Power service\n");
+//		}
+//	}
+//
+//	//Definiciones UART
+//	/* UART Device Number connected to RS232 socket on the BF537 EZ-KIT Lite */
+//#define UART_DEVICE_NUM     0u
+//
+//	//UART initialization
+//	/* Open UART driver */
+//	eResult = adi_uart_Open(UART_DEVICE_NUM, ADI_UART_DIR_BIDIRECTION,
+//			gUARTMemory, ADI_UART_BIDIR_DMA_MEMORY_SIZE, &hDevice);
+//	CheckResult(eResult);
+//
+//	/* Set UART Baud Rate */
+//	eResult = adi_uart_SetBaudRate(hDevice, BAUD_RATE);
+//	CheckResult(eResult);
+//
+//	/* Configure  UART device with NO-PARITY, ONE STOP BIT and 8bit word length. */
+//	eResult = adi_uart_SetConfiguration(hDevice, ADI_UART_NO_PARITY,
+//			ADI_UART_ONE_STOPBIT, ADI_UART_WORDLEN_8BITS);
+//	CheckResult(eResult);
+//
+//	/* Enable the DMA associated with UART if UART is expeced to work with DMA mode */
+//	eResult = adi_uart_EnableDMAMode(hDevice, true);
+//	CheckResult(eResult);
+//
+//	printf("Setup terminal on PC as described in Readme file. \n\n");
+//	printf("Type characters in the terminal program and notice the characters being echoed.\n\n");
+//	printf("Press the return key to stop the program.\n");
+//
+//	adi_uart_SubmitTxBuffer (hDevice, BufferTx1, FRAME);
+//	adi_uart_SubmitRxBuffer (hDevice, BufferTx2, FRAME);
+//	adi_uart_SubmitTxBuffer (hDevice, BufferRx1, FRAME);
+//	adi_uart_SubmitRxBuffer (hDevice, BufferRx2, FRAME);
+//
+//	eResult= adi_uart_EnableTx(hDevice,true);
+//	eResult= adi_uart_EnableRx(hDevice,true);
+//
+//
+//}
+//
+//void sendThroughUART(){
+//
+//	enviar = 0;
+//
+//	// Se bloquea hasta que haya buffer (en condiciones normales siempre debería haber)
+//	while(!enviar)
+//	{
+//		respuestaTx=adi_uart_IsTxBufferAvailable (hDevice, &enviar);
+//	}
+//
+//	// Cpgemos puntero a buffer de tx libre
+//	respuestaTx = adi_uart_GetTxBuffer (hDevice, &UBufferBidali);
+//
+//	// Copiamos lo que quermoes enviar
+//	memcpy(UBufferBidali, send_through_uart, BUFFER_SIZE);
+//
+//	//Enviamos el buffer
+//	respuestaTx = adi_uart_SubmitTxBuffer (hDevice, UBufferBidali, BUFFER_SIZE); //envia
+//}
+//
+//void receiveFromUART(){
+//
+//
+//	/* Read a character */
+//	respuestaRx=adi_uart_IsRxBufferAvailable (hDevice, &enviar);
+//
+//	if(enviar){
+//		respuestaRx = adi_uart_GetRxBuffer (hDevice, &UBufferJaso);//recibe
+//
+//		// Aquí lo copio al buffer de tx y lo envio
+//		memcpy(receive_from_uart,UBufferJaso, BUFFER_SIZE);	//void *s1, const void *s2, size_t n
+//		sendThroughUART();
+//
+//		// Acordarse de volver a enviar el buffer
+//		respuestaRx=adi_uart_SubmitRxBuffer (hDevice, UBufferJaso, BUFFER_SIZE);
+//	}
+//	//
+//
+//}
+//
+//void obtenerEntradaADC(){
+//
+//	int cont = 0;
+//
+//	bool guardar = false;
+//
+//	float valor = 0;
+//
+//	/* IF (Valid ADC buffer available) */
+//		if ((pAdcBuf != NULL)){
+//
+//			ptr_fr32 = (fract32 *) pAdcBuf;
+//
+//			for(indice_conversor=0 ; indice_conversor<BUFFER_SIZE_CONV/4 ; indice_conversor++){
+//
+//				captura_prueba[indice_conversor]=(ptr_fr32[indice_conversor])<<8;
+//
+//			}
+//
+//			/* Re-submit ADC buffer */
+//			Result = adi_ad1871_SubmitRxBuffer(hAd1871Adc, pAdcBuf, BUFFER_SIZE_CONV);
+//
+//			/* IF (Failure) */
+//			if(Result)
+//			{
+//				DEBUG_MSG2("Failed to submit buffer to AD1871", Result);
+//				//break;
+//			}
+//
+//			/* Clear the buffer pointer */
+//			pAdcBuf = NULL;
+//		}
+//
+//
+//}
+//
+//
+//void comprobarEntradaADC(){
+//
+//	/* Query AD1871 for processed buffer status */
+//		Result = (uint32_t) adi_ad1871_IsRxBufAvailable (hAd1871Adc, &bIsBufAvailable);
+//
+//		/* IF (Failure) */
+//		if (Result)
+//		{
+//			DEBUG_MSG2("Failed to query AD1871 for processed buffer status", Result);
+//			//break;
+//		}
+//
+//		/* IF (AD1871 Buffer available) */
+//		if (bIsBufAvailable)
+//		{
+//			/* Get AD1871 processed buffer address */
+//			Result = (uint32_t) adi_ad1871_GetRxBuffer (hAd1871Adc, &pAdcBuf);
+//
+//			/* IF (Failure) */
+//			if (Result)
+//			{
+//				DEBUG_MSG2("Failed to get AD1871 processed buffer address", Result);
+//				//break;
+//			}
+//		}
+//
+//}
+//
+//
+//void salirPorDAC(){
+//
+//	/* IF (Valid DAC buffer available) */
+//		if (pDacBuf != NULL){
+//
+//			/* Re-submit DAC buffer */
+//			Result = adi_ad1854_SubmitTxBuffer(hAd1854Dac, pDacBuf, BUFFER_SIZE_CONV);
+//
+//			/* IF (Failure) */
+//			if(Result)
+//			{
+//				DEBUG_MSG2("Failed to submit buffer to AD1854", Result);
+//				//break;
+//			}
+//
+//			/* Clear the buffer pointer */
+//			pDacBuf = NULL;
+//
+//		}
+//
+//}
+//
+//
+//void comprobarEntradaDAC(){
+//
+//	/* Query AD1854 for processed buffer status */
+//	Result = (uint32_t) adi_ad1854_IsTxBufAvailable (hAd1854Dac, &bIsBufAvailable);
+//
+//		/* IF (Failure) */
+//		if (Result)
+//		{
+//			DEBUG_MSG2("Failed to query AD1854 for processed buffer status", Result);
+//			//break;
+//		}
+//
+//		/* IF (AD1854 Buffer available) */
+//		if (bIsBufAvailable)
+//		{
+//			/* Get AD1854 processed buffer address */
+//			Result = (uint32_t) adi_ad1854_GetTxBuffer (hAd1854Dac, &pDacBuf);
+//
+//			/* IF (Failure) */
+//			if (Result)
+//			{
+//				DEBUG_MSG2("Failed to get AD1854 processed buffer address", Result);
+//				//break;
+//			}
+//
+//			ptr_fr32 = (fract32 *) pDacBuf;
+//
+//			for(indice_conversor=0 ; indice_conversor<BUFFER_SIZE_CONV/4; indice_conversor++){
+//
+//				ptr_fr32[indice_conversor] = captura_prueba[indice_conversor]>>8;
+//			}
+//
+//		}
+//
+//}
+//
+//
+//
+//
