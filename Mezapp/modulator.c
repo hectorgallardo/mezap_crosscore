@@ -66,7 +66,6 @@ void modulator(){
     mapper();
     upsample();
     filter();
-    //funcion_filtro();
     modulate();
 }
 
@@ -143,6 +142,5 @@ void modulate(){
     for (int i = 0; i < NUM_SAMPLES_TX; ++i) {
         modulated_signal[i] = (filtered_real_symbols[i]*cos_modulator_6KHz[i%8]- filtered_imag_symbols[i]*sin_modulator_6KHz[i%8])*1.4142;
     }
-
 
 }

@@ -1,663 +1,663 @@
 <?xml version="1.0" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="file:///C:/Analog Devices/CrossCore Embedded Studio 2.1.0/System/linker_log.xsl"?>
-<DOCUMENT gen_time='Thu Dec 15 17:34:37 2016
+<DOCUMENT gen_time='Mon Dec 19 17:30:11 2016
 '>
-<MSG id='0479BC98' mid='li2050' type='Warning' suppressed=''>
+<MSG id='04169FB8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_btowc' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[btowc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D00F0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A0100' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_clearerr' is defined in more than one library.
         Defined in:     libio.dlb[clearerr.doj]
         Redefined in:   libc.dlb[clearerr.doj]
         Definition from libio.dlb[clearerr.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D01E0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A81F8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fclose' is defined in more than one library.
         Defined in:     libio.dlb[fclose.doj]
         Redefined in:   libc.dlb[fclose.doj]
         Definition from libio.dlb[fclose.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D03B0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A87C8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_feof' is defined in more than one library.
         Defined in:     libio.dlb[eof.doj]
         Redefined in:   libc.dlb[feof.doj]
         Definition from libio.dlb[eof.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D0580' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A8998' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_ferror' is defined in more than one library.
         Defined in:     libio.dlb[ferror.doj]
         Redefined in:   libc.dlb[ferror.doj]
         Definition from libio.dlb[ferror.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D0750' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A8B68' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fflush' is defined in more than one library.
         Defined in:     libio.dlb[fflush.doj]
         Redefined in:   libc.dlb[fflush.doj]
         Definition from libio.dlb[fflush.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D0920' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A8D38' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fgetc' is defined in more than one library.
         Defined in:     libio.dlb[fgetc.doj]
         Redefined in:   libc.dlb[fgetc.doj]
         Definition from libio.dlb[fgetc.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D0AF0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A8F08' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fgetpos' is defined in more than one library.
         Defined in:     libio.dlb[fgetpos.doj]
         Redefined in:   libc.dlb[fgetpos.doj]
         Definition from libio.dlb[fgetpos.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D0CC0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A90D8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fgets' is defined in more than one library.
         Defined in:     libio.dlb[fgets.doj]
         Redefined in:   libc.dlb[fgets.doj]
         Definition from libio.dlb[fgets.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D0E90' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A92A8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fgetwc' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fgetwc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D1060' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A9478' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fgetws' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fgetws.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D1230' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A9648' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fopen' is defined in more than one library.
         Defined in:     libio.dlb[fopen.doj]
         Redefined in:   libc.dlb[fopen.doj]
         Definition from libio.dlb[fopen.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D1400' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A9818' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fprintf' is defined in more than one library.
         Defined in:     libio.dlb[fprintf_32.doj]
         Redefined in:   libc.dlb[fprintf32.doj]
         Definition from libio.dlb[fprintf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D15D0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A99E8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__fprintf64' is defined in more than one library.
         Defined in:     libio.dlb[fprintf_64.doj]
         Redefined in:   libc.dlb[fprintf64.doj]
         Definition from libio.dlb[fprintf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D18F0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A9D08' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fputc' is defined in more than one library.
         Defined in:     libio.dlb[fputc.doj]
         Redefined in:   libc.dlb[fputc.doj]
         Definition from libio.dlb[fputc.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D19E0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A9DF8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fputs' is defined in more than one library.
         Defined in:     libio.dlb[fputs.doj]
         Redefined in:   libc.dlb[fputs.doj]
         Definition from libio.dlb[fputs.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D1BB0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041A9FC8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fputwc' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fputwc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D27F8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E3F8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fputws' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fputws.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2BB8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E7B8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fread' is defined in more than one library.
         Defined in:     libio.dlb[fread.doj]
         Redefined in:   libc.dlb[fread.doj]
         Definition from libio.dlb[fread.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D1E98' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E998' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_freopen' is defined in more than one library.
         Defined in:     libio.dlb[freopen.doj]
         Redefined in:   libc.dlb[freopen.doj]
         Definition from libio.dlb[freopen.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D1F88' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E4E8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fscanf' is defined in more than one library.
         Defined in:     libio.dlb[fscanf_32.doj]
         Redefined in:   libc.dlb[fscanf32.doj]
         Definition from libio.dlb[fscanf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2348' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E308' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__fscanf64' is defined in more than one library.
         Defined in:     libio.dlb[fscanf_64.doj]
         Redefined in:   libc.dlb[fscanf64.doj]
         Definition from libio.dlb[fscanf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2258' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E038' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fseek' is defined in more than one library.
         Defined in:     libio.dlb[fseek.doj]
         Redefined in:   libc.dlb[fseek.doj]
         Definition from libio.dlb[fseek.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2AC8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E128' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fsetpos' is defined in more than one library.
         Defined in:     libio.dlb[fsetpos.doj]
         Redefined in:   libc.dlb[fsetpos.doj]
         Definition from libio.dlb[fsetpos.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2168' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419EA88' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_ftell' is defined in more than one library.
         Defined in:     libio.dlb[ftell.doj]
         Redefined in:   libc.dlb[ftell.doj]
         Definition from libio.dlb[ftell.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D28E8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E5D8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fwide' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fwide.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D1DA8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E6C8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fwprintf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fwprintf32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2078' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E8A8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__fwprintf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fwprintf64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2438' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419EB78' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fwrite' is defined in more than one library.
         Defined in:     libio.dlb[fwrite.doj]
         Redefined in:   libc.dlb[fwrite.doj]
         Definition from libio.dlb[fwrite.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D29D8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419EC68' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_fwscanf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fwscanf32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2528' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419EE48' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__fwscanf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[fwscanf64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2618' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419ED58' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_getc' is defined in more than one library.
         Defined in:     libio.dlb[getc.doj]
         Redefined in:   libc.dlb[getc.doj]
         Definition from libio.dlb[getc.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047D2708' mid='li2050' type='Warning' suppressed=''>
+<MSG id='0419E218' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_getchar' is defined in more than one library.
         Defined in:     libio.dlb[getchar.doj]
         Redefined in:   libc.dlb[getchar.doj]
         Definition from libio.dlb[getchar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0E50' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BEB70' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_gets' is defined in more than one library.
         Defined in:     libio.dlb[gets.doj]
         Redefined in:   libc.dlb[gets.doj]
         Definition from libio.dlb[gets.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DF410' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE030' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_getwc' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[getwc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DFC80' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE990' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_getwchar' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[getwchar.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DF500' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE120' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_mbrlen' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[mbrlen.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DF6E0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE210' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_mbrtowc' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[mbrtowc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DF7D0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BEE40' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_mbsinit' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[mbsinit.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DFD70' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE300' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_mbsrtowcs' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[mbsrtowc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DFE60' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE6C0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_printf' is defined in more than one library.
         Defined in:     libio.dlb[printf_32.doj]
         Redefined in:   libc.dlb[printf32.doj]
         Definition from libio.dlb[printf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E1120' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE3F0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__printf64' is defined in more than one library.
         Defined in:     libio.dlb[printf_64.doj]
         Redefined in:   libc.dlb[printf64.doj]
         Definition from libio.dlb[printf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DFF50' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE8A0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_putc' is defined in more than one library.
         Defined in:     libio.dlb[putc.doj]
         Redefined in:   libc.dlb[putc.doj]
         Definition from libio.dlb[putc.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0040' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE4E0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_putchar' is defined in more than one library.
         Defined in:     libio.dlb[putchar.doj]
         Redefined in:   libc.dlb[putchar.doj]
         Definition from libio.dlb[putchar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0F40' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BEA80' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_puts' is defined in more than one library.
         Defined in:     libio.dlb[puts.doj]
         Redefined in:   libc.dlb[puts.doj]
         Definition from libio.dlb[puts.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E05E0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE7B0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_putwc' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[putwc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E09A0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BEC60' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_putwchar' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[putwchar.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0B80' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BED50' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_remove' is defined in more than one library.
         Defined in:     libio.dlb[remove.doj]
         Redefined in:   libc.dlb[remove.doj]
         Definition from libio.dlb[remove.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E1030' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041BE5D0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_rename' is defined in more than one library.
         Defined in:     libio.dlb[rename.doj]
         Redefined in:   libc.dlb[rename.doj]
         Definition from libio.dlb[rename.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E04F0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0FE8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_rewind' is defined in more than one library.
         Defined in:     libio.dlb[rewind.doj]
         Redefined in:   libc.dlb[rewind.doj]
         Definition from libio.dlb[rewind.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E07C0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C11C8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_scanf' is defined in more than one library.
         Defined in:     libio.dlb[scanf_32.doj]
         Redefined in:   libc.dlb[scanf32.doj]
         Definition from libio.dlb[scanf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0130' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C12B8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__scanf64' is defined in more than one library.
         Defined in:     libio.dlb[scanf_64.doj]
         Redefined in:   libc.dlb[scanf64.doj]
         Definition from libio.dlb[scanf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DF8C0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C13A8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_setbuf' is defined in more than one library.
         Defined in:     libio.dlb[setbuf.doj]
         Redefined in:   libc.dlb[setbuf.doj]
         Definition from libio.dlb[setbuf.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DF5F0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0E08' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_setvbuf' is defined in more than one library.
         Defined in:     libio.dlb[setvbuf.doj]
         Redefined in:   libc.dlb[setvbuf.doj]
         Definition from libio.dlb[setvbuf.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0220' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0EF8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_snprintf' is defined in more than one library.
         Defined in:     libio.dlb[snprintf_32.doj]
         Redefined in:   libc.dlb[snprintf32.doj]
         Definition from libio.dlb[snprintf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E08B0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C10D8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__snprintf64' is defined in more than one library.
         Defined in:     libio.dlb[snprintf_64.doj]
         Redefined in:   libc.dlb[snprintf64.doj]
         Definition from libio.dlb[snprintf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0310' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0598' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_sprintf' is defined in more than one library.
         Defined in:     libio.dlb[sprintf_32.doj]
         Redefined in:   libc.dlb[sprintf32.doj]
         Definition from libio.dlb[sprintf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0C70' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0688' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__sprintf64' is defined in more than one library.
         Defined in:     libio.dlb[sprintf_64.doj]
         Redefined in:   libc.dlb[sprintf64.doj]
         Definition from libio.dlb[sprintf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DF9B0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0958' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_sscanf' is defined in more than one library.
         Defined in:     libio.dlb[sscanf_32.doj]
         Redefined in:   libc.dlb[sscanf32.doj]
         Definition from libio.dlb[sscanf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DFAA0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0D18' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__sscanf64' is defined in more than one library.
         Defined in:     libio.dlb[sscanf_64.doj]
         Redefined in:   libc.dlb[sscanf64.doj]
         Definition from libio.dlb[sscanf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0400' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0B38' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_swprintf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[swprintf32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047DFB90' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0A48' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__swprintf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[swprintf64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0A90' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0868' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_swscanf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[swscanf32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E06D0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0778' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__swscanf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[swscanf64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E0D60' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041C0C28' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_ungetc' is defined in more than one library.
         Defined in:     libio.dlb[ungetc.doj]
         Redefined in:   libc.dlb[ungetc.doj]
         Definition from libio.dlb[ungetc.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='047E1210' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3928' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_ungetwc' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[ungetwc.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807DA8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3BF8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcstod' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[v35_wstod.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807628' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3A18' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_vfprintf' is defined in more than one library.
         Defined in:     libio.dlb[vfprintf_32.doj]
         Redefined in:   libc.dlb[vfprintf32.doj]
         Definition from libio.dlb[vfprintf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807538' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3478' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__vfprintf64' is defined in more than one library.
         Defined in:     libio.dlb[vfprintf_64.doj]
         Redefined in:   libc.dlb[vfprintf64.doj]
         Definition from libio.dlb[vfprintf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807718' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3CE8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_vfwprintf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[vfwprint32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='048069F8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3568' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__vfwprintf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[vfwprint64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806368' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3388' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_vprintf' is defined in more than one library.
         Defined in:     libio.dlb[vprintf_32.doj]
         Redefined in:   libc.dlb[vprintf32.doj]
         Definition from libio.dlb[vprintf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806EA8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3298' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__vprintf64' is defined in more than one library.
         Defined in:     libio.dlb[vprintf_64.doj]
         Redefined in:   libc.dlb[vprintf64.doj]
         Definition from libio.dlb[vprintf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807358' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3658' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_vsnprintf' is defined in more than one library.
         Defined in:     libio.dlb[vsnprintf_32.doj]
         Redefined in:   libc.dlb[vsnprint32.doj]
         Definition from libio.dlb[vsnprintf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806728' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3748' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__vsnprintf64' is defined in more than one library.
         Defined in:     libio.dlb[vsnprintf_64.doj]
         Redefined in:   libc.dlb[vsnprint64.doj]
         Definition from libio.dlb[vsnprintf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='048078F8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D31A8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_vsprintf' is defined in more than one library.
         Defined in:     libio.dlb[vsprintf_32.doj]
         Redefined in:   libc.dlb[vsprintf32.doj]
         Definition from libio.dlb[vsprintf_32.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806278' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3838' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__vsprintf64' is defined in more than one library.
         Defined in:     libio.dlb[vsprintf_64.doj]
         Redefined in:   libc.dlb[vsprintf64.doj]
         Definition from libio.dlb[vsprintf_64.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806548' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3B08' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_vswprintf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[vswprint32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806CC8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3DD8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__vswprintf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[vswprint64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806818' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3EC8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_vwprintf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[vwprintf32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807808' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D3FB8' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__vwprintf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[vwprintf64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807268' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4990' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcrtomb' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcrtomb.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806638' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4300' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcscat' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcscat.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806AE8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4C60' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcscmp' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcscmp.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='048079E8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D46C0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcscoll' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcscoll.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806458' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D47B0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcscpy' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcscpy.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807178' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D44E0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcscspn' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcscspn.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807AD8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4F30' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcslen' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcslen.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806908' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4E40' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcsncat' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcsncat.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807448' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4B70' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcsncpy' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcsncpy.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806F98' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D43F0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcsrtombs' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcsrtomb.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807BC8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D48A0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcstol' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcstol.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807CB8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D45D0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcstoul' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcstoul.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806BD8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4A80' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wcsxfrm' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wcsxfrm.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807E98' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D4D50' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wctob' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wctob.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806188' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D5020' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wmemcmp' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wmemcmp.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04806DB8' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D5110' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wmemcpy' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wmemcpy.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807088' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7C60' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wmemmove' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wmemmove.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04807F88' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7990' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wmemset' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wmemset.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04814BD0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D77B0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wprintf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wprintf32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04814090' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7B70' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__wprintf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wprintf64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04814630' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7300' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_wscanf' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wscanf32.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04814360' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7D50' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__wscanf64' is defined in more than one library.
         Defined in:     libio.dlb[widechar.doj]
         Redefined in:   libc.dlb[wscanf64.doj]
         Definition from libio.dlb[widechar.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04814450' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7E40' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__Files' is defined in more than one library.
         Defined in:     libio.dlb[xfiles.doj]
         Redefined in:   libc.dlb[xfiles.doj]
         Definition from libio.dlb[xfiles.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04813370' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7120' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__Stderr' is defined in more than one library.
         Defined in:     libio.dlb[xfiles.doj]
         Redefined in:   libc.dlb[xfiles.doj]
         Definition from libio.dlb[xfiles.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04813280' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D76C0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__Stdin' is defined in more than one library.
         Defined in:     libio.dlb[xfiles.doj]
         Redefined in:   libc.dlb[xfiles.doj]
         Definition from libio.dlb[xfiles.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04813910' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D78A0' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '__Stdout' is defined in more than one library.
         Defined in:     libio.dlb[xfiles.doj]
         Redefined in:   libc.dlb[xfiles.doj]
         Definition from libio.dlb[xfiles.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04814900' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7030' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_raise_interrupt' is defined in more than one library.
         Defined in:     libsmall.dlb[raiseint_s.doj]
         Redefined in:   libevent.dlb[raiseint.doj]
         Definition from libsmall.dlb[raiseint_s.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04813BE0' mid='li2050' type='Warning' suppressed=''>
+<MSG id='041D7210' mid='li2050' type='Warning' suppressed=''>
 <TEXT><![CDATA[Symbol '_register_handler' is defined in more than one library.
         Defined in:     libsmall.dlb[reghdlr_s.doj]
         Redefined in:   libevent.dlb[reghdlr.doj]
         Definition from libsmall.dlb[reghdlr_s.doj] will be used.]]></TEXT>
 </MSG>
-<MSG id='04814180' mid='li3201' type='Informational' suppressed=''>
-<TEXT><![CDATA[Successfully eliminated 1087341 bytes in processor 'p0'
+<MSG id='041D73F0' mid='li3201' type='Informational' suppressed=''>
+<TEXT><![CDATA[Successfully eliminated 156961 bytes in processor 'p0'
 ]]></TEXT>
 <EXTENDED_INFO><![CDATA[Eliminated object (___eh_gdt, ___eh_gdt+0x4) of size 4 bytes from 'app_startup.doj(.gdt)'
 Eliminated object (_pAD1854LastDev, _pAD1854LastDev+0x4) of size 4 bytes from '.\system\BF537_EZ-KIT_Lite\drivers\dac\adi_ad1854.doj(data1)'
@@ -689,52 +689,48 @@ Eliminated object (_filter_demodulator, ._filter_demodulator.end) of size 282 by
 Eliminated object (_init_ranges, ._init_ranges.end) of size 62 bytes from '.\demodulator.doj(program)'
 Eliminated object (_demapper, ._demapper.end) of size 240 bytes from '.\demodulator.doj(program)'
 Eliminated object (_demodulator, ._demodulator.end) of size 26 bytes from '.\demodulator.doj(program)'
-Eliminated object (.epcdatasdram0, .epcdatasdram0.end) of size 17 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_signal, _received_signal+0x4c4) of size 1220 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_real, _received_real+0x588) of size 1416 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_imag, _received_imag+0x588) of size 1416 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_fr_real, _received_fr_real+0x4c4) of size 1220 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_fr_imag, _received_fr_imag+0x4c4) of size 1220 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_filtered_fr_real, _filtered_fr_real+0x4c4) of size 1220 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_filtered_fr_imag, _filtered_fr_imag+0x4c4) of size 1220 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_filtered_real, _received_filtered_real+0x588) of size 1416 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_filtered_imag, _received_filtered_imag+0x588) of size 1416 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_symbol_real, _received_symbol_real+0x80) of size 128 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_received_symbol_imag, _received_symbol_imag+0x80) of size 128 bytes from '.\demodulator.doj(sdram0)'
-Eliminated object (_symbols, _symbols+0x20) of size 32 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (.epcdatasdram0, .epcdatasdram0.end) of size 21 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_signal, _received_signal+0x144) of size 324 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_real, _received_real+0x208) of size 520 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_imag, _received_imag+0x208) of size 520 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_fr_real, _received_fr_real+0x144) of size 324 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_fr_imag, _received_fr_imag+0x144) of size 324 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_filtered_fr_real, _filtered_fr_real+0x144) of size 324 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_filtered_fr_imag, _filtered_fr_imag+0x144) of size 324 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_filtered_real, _received_filtered_real+0x208) of size 520 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_filtered_imag, _received_filtered_imag+0x208) of size 520 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_symbol_real, _received_symbol_real+0x10) of size 16 bytes from '.\demodulator.doj(sdram0)'
+Eliminated object (_received_symbol_imag, _received_symbol_imag+0x10) of size 16 bytes from '.\demodulator.doj(sdram0)'
 Eliminated object (_filter_coefficients, _filter_coefficients+0xc4) of size 196 bytes from '.\filter_coeffic.doj(sdram0)'
 Eliminated object (___argv_string, ___argv_string+0x1) of size 1 bytes from '.\modem.doj(data1)'
-Eliminated object (_x1, _x1+0xc4) of size 196 bytes from '.\modulador.doj(L1_data_b)'
-Eliminated object (_frame, _frame+0x10) of size 16 bytes from '.\modulador.doj(bsz)'
-Eliminated object (_state_real, _state_real+0x14) of size 20 bytes from '.\modulador.doj(bsz)'
-Eliminated object (_state_imag, _state_imag+0x14) of size 20 bytes from '.\modulador.doj(bsz)'
-Eliminated object (_modulate, ._modulate.end) of size 192 bytes from '.\modulador.doj(program)'
-Eliminated object (_upsample, ._upsample.end) of size 168 bytes from '.\modulador.doj(program)'
-Eliminated object (_mapper, ._mapper.end) of size 178 bytes from '.\modulador.doj(program)'
-Eliminated object (_init_modulator, ._init_modulator.end) of size 122 bytes from '.\modulador.doj(program)'
-Eliminated object (_filter, ._filter.end) of size 276 bytes from '.\modulador.doj(program)'
-Eliminated object (_modulator, ._modulator.end) of size 26 bytes from '.\modulador.doj(program)'
-Eliminated object (_frame_symbols_real, _frame_symbols_real+0x80) of size 128 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_frame_symbols_imag, _frame_symbols_imag+0x80) of size 128 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_frame_symbols_real_upsample, _frame_symbols_real_upsample+0x4c4) of size 1220 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_frame_symbols_imag_upsample, _frame_symbols_imag_upsample+0x4c4) of size 1220 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_constelation_imag_f, _constelation_imag_f+0x40) of size 64 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_constelation_real_f, _constelation_real_f+0x40) of size 64 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_constelation_imag, _constelation_imag+0x40) of size 64 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_constelation_real, _constelation_real+0x40) of size 64 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_sin_modulator_6KHz, _sin_modulator_6KHz+0x20) of size 32 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_cos_modulator_6KHz, _cos_modulator_6KHz+0x20) of size 32 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_sin_modulator_12KHz, _sin_modulator_12KHz+0x20) of size 32 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_cos_modulator_12KHz, _cos_modulator_12KHz+0x20) of size 32 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_filtered_real_symbols, _filtered_real_symbols+0x4c4) of size 1220 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_filtered_imag_symbols, _filtered_imag_symbols+0x4c4) of size 1220 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_delay_real, _delay_real+0xc4) of size 196 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_delay_imag, _delay_imag+0xc4) of size 196 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_modulated_signal, _modulated_signal+0x4c4) of size 1220 bytes from '.\modulador.doj(sdram0)'
-Eliminated object (_indice_guardado, _indice_guardado+0x4) of size 4 bytes from '.\uart.doj(sdram0)'
-Eliminated object (_captura_prueba, _captura_prueba+0x100000) of size 1048576 bytes from '.\uart.doj(sdram0)'
-Eliminated object (_trama_entrada_mod, _trama_entrada_mod+0x18) of size 24 bytes from '.\uart.doj(sdram0)'
-Eliminated object (_trama_salida_demod, _trama_salida_demod+0x10) of size 16 bytes from '.\uart.doj(sdram0)'
+Eliminated object (_x1, _x1+0xc4) of size 196 bytes from '.\modulator.doj(L1_data_b)'
+Eliminated object (_state_real, _state_real+0x14) of size 20 bytes from '.\modulator.doj(bsz)'
+Eliminated object (_state_imag, _state_imag+0x14) of size 20 bytes from '.\modulator.doj(bsz)'
+Eliminated object (_modulate, ._modulate.end) of size 192 bytes from '.\modulator.doj(program)'
+Eliminated object (_upsample, ._upsample.end) of size 166 bytes from '.\modulator.doj(program)'
+Eliminated object (_mapper, ._mapper.end) of size 178 bytes from '.\modulator.doj(program)'
+Eliminated object (_init_modulator, ._init_modulator.end) of size 122 bytes from '.\modulator.doj(program)'
+Eliminated object (_filter, ._filter.end) of size 276 bytes from '.\modulator.doj(program)'
+Eliminated object (_modulator, ._modulator.end) of size 26 bytes from '.\modulator.doj(program)'
+Eliminated object (_frame_symbols_real, _frame_symbols_real+0x10) of size 16 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_frame_symbols_imag, _frame_symbols_imag+0x10) of size 16 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_frame_symbols_real_upsample, _frame_symbols_real_upsample+0x144) of size 324 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_frame_symbols_imag_upsample, _frame_symbols_imag_upsample+0x144) of size 324 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_constelation_imag_f, _constelation_imag_f+0x40) of size 64 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_constelation_real_f, _constelation_real_f+0x40) of size 64 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_constelation_imag, _constelation_imag+0x40) of size 64 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_constelation_real, _constelation_real+0x40) of size 64 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_sin_modulator_6KHz, _sin_modulator_6KHz+0x20) of size 32 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_cos_modulator_6KHz, _cos_modulator_6KHz+0x20) of size 32 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_sin_modulator_12KHz, _sin_modulator_12KHz+0x20) of size 32 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_cos_modulator_12KHz, _cos_modulator_12KHz+0x20) of size 32 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_filtered_real_symbols, _filtered_real_symbols+0x144) of size 324 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_filtered_imag_symbols, _filtered_imag_symbols+0x144) of size 324 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_delay_real, _delay_real+0xc4) of size 196 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_delay_imag, _delay_imag+0xc4) of size 196 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_modulated_signal, _modulated_signal+0x144) of size 324 bytes from '.\modulator.doj(sdram0)'
+Eliminated object (_receiveFromUART, ._receiveFromUART.end) of size 120 bytes from '.\peripherals.doj(program)'
+Eliminated object (_captura_prueba, _captura_prueba+0x20000) of size 131072 bytes from '.\peripherals.doj(sdram0)'
 Eliminated object (.SWITCH.0, .SWITCH.0.end) of size 24 bytes from 'libdrv.dlb[adi_sport.doj](constdata)'
 Eliminated object (.SWITCH.1, .SWITCH.1.end) of size 24 bytes from 'libdrv.dlb[adi_sport.doj](constdata)'
 Eliminated object (_sport_device_info, _sport_device_info+0x60) of size 96 bytes from 'libdrv.dlb[adi_sport.doj](data1)'
@@ -814,6 +810,7 @@ Eliminated object (_adi_uart_EnableIrDAMode, ._adi_uart_EnableIrDAMode.end) of s
 Eliminated object (_adi_uart_ConfigAutobaud, ._adi_uart_ConfigAutobaud.end) of size 84 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_adi_uart_GetBaudRate, ._adi_uart_GetBaudRate.end) of size 34 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_adi_uart_RegisterCallback, ._adi_uart_RegisterCallback.end) of size 10 bytes from 'libdrv.dlb[adi_uart.doj](program)'
+Eliminated object (_adi_uart_IsRxBufferAvailable, ._adi_uart_IsRxBufferAvailable.end) of size 34 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_adi_uart_EnableAutobaud, ._adi_uart_EnableAutobaud.end) of size 248 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_TimerCallback, ._TimerCallback.end) of size 160 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_uart_pendForBuffer, ._uart_pendForBuffer.end) of size 194 bytes from 'libdrv.dlb[adi_uart.doj](program)'
@@ -821,6 +818,7 @@ Eliminated object (_adi_uart_Write, ._adi_uart_Write.end) of size 128 bytes from
 Eliminated object (_adi_uart_Read, ._adi_uart_Read.end) of size 128 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_uart_CloseChannel, ._uart_CloseChannel.end) of size 70 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_adi_uart_Close, ._adi_uart_Close.end) of size 204 bytes from 'libdrv.dlb[adi_uart.doj](program)'
+Eliminated object (_adi_uart_GetRxBuffer, ._adi_uart_GetRxBuffer.end) of size 52 bytes from 'libdrv.dlb[adi_uart.doj](program)'
 Eliminated object (_register_handler, ._register_handler.end) of size 16 bytes from 'libsmall.dlb[reghdlr_s.doj](program)'
 Eliminated object (__adi_osal_MemAlloc, .__adi_osal_MemAlloc.end) of size 80 bytes from 'libosal_noos.dlb[adi_osal_arch_c.doj](program)'
 Eliminated object (__adi_osal_MemFree, .__adi_osal_MemFree.end) of size 32 bytes from 'libosal_noos.dlb[adi_osal_arch_c.doj](program)'

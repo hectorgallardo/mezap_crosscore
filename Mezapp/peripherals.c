@@ -1,13 +1,12 @@
-/*
- * uart.c
- *
- *  Created on: 15/12/2016
- *      Author: Hector
- */
-
-#include "uart.h"
+#include "peripherals.h"
 #include "modem.h"
 
+#include <blackfin.h>
+#include <stdio.h>
+#include <services\int\adi_int.h>
+#include <drivers\uart\adi_uart.h>
+#include <services\pwr\adi_pwr.h>
+#include <string.h>
 
 
 #define BAUD_RATE           9600u
@@ -56,7 +55,8 @@ section ("sdram0") int indice_guardado = 0;
 //Variables UART
 section ("sdram0") unsigned char trama_entrada_mod[CARACTERES_PRUEBA + FRAME];// = {"actualizar"};
 section ("sdram0") unsigned char trama_salida_demod[FRAME];
-section ("sdram0") unsigned char entrada_test[FRAME];
+section ("sdram0") unsigned char send_through_uart[BUFFER_SIZE];
+section ("sdram0") unsigned char receive_from_uart[BUFFER_SIZE];
 
 
 
@@ -92,7 +92,7 @@ static void CheckResult(ADI_UART_RESULT result) {
 
 }
 
-void initializations(){
+void initializate_peripherals(){
 
 	unsigned int i;
 	ADI_UART_RESULT eResult;
@@ -162,10 +162,7 @@ void initializations(){
 
 }
 
-
-
-
-void salirPorUART(){
+void sendThroughUART(){
 
 	enviar = 0;
 
@@ -179,13 +176,13 @@ void salirPorUART(){
 	respuestaTx = adi_uart_GetTxBuffer (hDevice, &UBufferBidali);
 
 	// Copiamos lo que quermoes enviar
-	memcpy(UBufferBidali, entrada_test, FRAME);
+	memcpy(UBufferBidali, send_through_uart, BUFFER_SIZE);
 
 	//Enviamos el buffer
-	respuestaTx = adi_uart_SubmitTxBuffer (hDevice, UBufferBidali, FRAME); //envia
+	respuestaTx = adi_uart_SubmitTxBuffer (hDevice, UBufferBidali, BUFFER_SIZE); //envia
 }
 
-void comprobarEntradaUART(){
+void receiveFromUART(){
 
 
 	/* Read a character */
@@ -195,14 +192,12 @@ void comprobarEntradaUART(){
 		respuestaRx = adi_uart_GetRxBuffer (hDevice, &UBufferJaso);//recibe
 
 		// Aquí lo copio al buffer de tx y lo envio
-		memcpy(entrada_test,UBufferJaso, FRAME);	//void *s1, const void *s2, size_t n
-		salirPorUART();
+		memcpy(receive_from_uart,UBufferJaso, BUFFER_SIZE);	//void *s1, const void *s2, size_t n
+		sendThroughUART();
 
 		// Acordarse de volver a enviar el buffer
-		respuestaRx=adi_uart_SubmitRxBuffer (hDevice, UBufferJaso, FRAME);
+		respuestaRx=adi_uart_SubmitRxBuffer (hDevice, UBufferJaso, BUFFER_SIZE);
 	}
 	//
 
 }
-
-
