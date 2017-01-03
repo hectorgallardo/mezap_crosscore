@@ -126,9 +126,9 @@ void demapper(){
 			bit_1=1;
 
 			if (received_symbol_real[i]<range2) {
-				bit_2=0;
-			}else{
 				bit_2=1;
+			}else{
+				bit_2=0;
 			}
 		}
 
