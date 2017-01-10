@@ -4,7 +4,8 @@
 ****************************************************************************/
 #include <filter.h>
 
-segment ("sdram0") fract32 filter_coefficients[]={
+extern segment ("sdram0") fract32 filter_coefficients[];
+/*={
 0xff98d901,
 0xffb087cc,
 0x00000000,
@@ -55,3 +56,4 @@ segment ("sdram0") fract32 filter_coefficients[]={
 0xffb087cc,
 0xff98d901
 };
+*/
